@@ -1,0 +1,138 @@
+.header
+    padding-top: 20px
+    padding-bottom: 18px
+    font-family: Montserrat
+    background-color: #ffffff
+    max-width: 1500px
+    margin: auto
+    border-radius: 0px 0px 30px 30px
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+    &__info
+        display: flex
+        align-items: center
+        justify-content: space-between
+        border-bottom: 2px solid #ff990085
+        padding-bottom: 18px
+        padding-left: 10px
+        padding-right: 10px
+        &__block
+            position: relative
+            display: flex
+            align-items: center
+            &__main
+                padding-right: 24px
+                &::after
+                    position: absolute
+                    content: ''
+                    display: flex
+                    right: 0
+                    top: 50%
+                    height: 50px
+                    width: 1px
+                    margin-top: -25px
+                    background-color: #FF990085
+            &__secondary
+                &::after
+                    position: absolute
+                    content: ''
+                    display: flex
+                    right: 0
+                    top: 50%
+                    height: 50px
+                    width: 1px
+                    margin-top: -25px
+                    background-color: #FF990085
+        &__icon
+            width: 50px
+            height: 50px
+            border: 1px solid black
+            border-radius: 50%
+            margin-right: 10px
+            &__pickup
+                background: url('../img/pickup.svg') no-repeat center
+            &__delivery
+                background: url('../img/delivery.svg') no-repeat center
+            &__orders
+                background: url('../img/orders.svg') no-repeat center
+            &__phone
+                background: url('../img/phone.svg') no-repeat center
+        &__content
+            display: flex
+            flex-direction: column
+        &__title
+            font-size: 18px
+            &__orders
+                max-width: 117px
+        &__adress
+            font-size: 13px
+            max-width: 156px
+        &__time
+            max-width: 235px
+        &__phone
+            display: flex
+            align-items: center
+            &__link
+                font-size: 24px
+                font-weight: bold
+                text-decoration: none
+                color: #000000
+    &__nav
+        display: flex
+        align-items: center
+        justify-content: space-between
+        max-width: 100%
+        width: 100%
+        &__link
+            text-decoration: none
+            font-size: 18px
+            color: #000000
+            &__catalog
+                padding-right: 15px
+                background: url('../img/catalog.svg') no-repeat right
+            &__kazans
+                padding-left: 25px
+                background: url('../img/kazans.svg') no-repeat left
+        &__link:not(:last-child)
+            margin-right: 30px
+        &__block
+            margin-top: 18px
+            display: flex
+            align-items: center
+            justify-content: space-between
+    &__logo
+        width: 180px
+        height: 49px
+        background: url('../img/logo.png') no-repeat
+    
+.haeder__nav__basket__link
+    position: relative
+    display: flex
+    text-decoration: none
+    color: #ffffff
+    font-weight: bold
+    padding-left: 17px
+    padding-top: 6px
+    padding-bottom: 6px
+    padding-right: 57px
+    background: #FF9900 url('../img/basket.svg') no-repeat 100px 
+    line-height: 150%
+    border-radius: 10px
+    margin-left: 30px
+    transition: all 0.2s
+    &:hover
+        box-shadow: 0px 0px 10px #FF990090
+    &::after
+        position: absolute
+        content: '1'
+        display: flex
+        color: #ffffff
+        top: 0
+        right: 0
+        width: 25px
+        height: 25px
+        background: black
+        justify-content: center
+        align-items: center
+        border-radius: 50%
+        margin-top: -12px
+        margin-right: -12px
