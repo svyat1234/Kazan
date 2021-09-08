@@ -1,4 +1,6 @@
 .header
+    z-index: 55
+    position: relative
     padding-top: 20px
     padding-bottom: 18px
     font-family: Montserrat
@@ -7,6 +9,15 @@
     margin: auto
     border-radius: 0px 0px 30px 30px
     box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+    &__tomato
+        position: absolute
+        content: ''
+        display: flex
+        top: 0
+        right: 0
+        width: 150px
+        height: 214px
+        background: url('../img/header_tomato1.png') no-repeat
     &__info
         display: flex
         align-items: center
