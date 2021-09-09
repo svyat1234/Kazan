@@ -1,13 +1,182 @@
 .guarantee
+    background: url('../img/guarantee/guarantee-bg1.png') no-repeat left 600px, url('../img/guarantee/guarantee-bg2.png') no-repeat left top 120px, url('../img/guarantee/guarantee-bg3m.png') no-repeat right top, url('../img/guarantee/guarantee-bg4.png') no-repeat right top 600px
     &__heading
         display: flex
         flex-direction: column
         align-items: center
         margin-top: 80px
+        font-family: 'Gilroy-regular'
     &__title
         max-width: 1097px
         font-weight: normal
-        font-family: 'Gilroy-medium'
+        font-family: 'Gilroy-regular'
         margin-bottom: 20px
         &__primary
             font-family: 'Gilroy-bold'
+    &__info
+        font-family: 'Gilroy-regular'
+        font-size: 18px
+    &__manager
+        display: flex
+        justify-content: center
+        margin-top: 20px
+        &__img
+            width: 130px
+            height: 130px
+            background: url('../img/guarantee_men.png') no-repeat center
+            &__block
+               padding: 23px
+               border: 2px solid #FF9900
+               border-radius: 50%
+        &__content
+            margin-top: 59px
+        &__info
+            display: flex
+            margin-left: 24px
+            font-size: 24px
+            line-height: 120%
+        &__text
+            display: flex
+            margin-top: 8.5px
+            padding-top: 25px
+            padding-bottom: 10px
+            padding-right: 20px
+            padding-left: 70px
+            clip-path: polygon(0% 0%, 100% 25%, 100% 100%, 10% 100%)
+            background-color: #ffffff
+            font-size: 18px
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5)
+    &__content
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        margin-top: 54px
+        &__heading
+            display: flex
+            align-items: center
+        &__title
+            padding: 15px
+            border: 2px solid #FF9900
+            border-radius: 50%
+            margin-right: 10px
+            &__text
+                display: flex
+                justify-content: center
+                align-items: center
+                flex-direction: column
+                width: 146px
+                height: 146px
+                background-color: #ffffff
+                border-radius: 50%
+                border: 2px solid #FF9900
+                font-size: 36px
+                &__primary
+                    font-family: 'Gilroy-bold'
+        &__text
+            font-size: 24px
+            line-height: 120%
+            max-width: 420px
+            text-align: center
+    &__cards
+        display: flex
+        flex-direction: column
+    &__card
+        display: flex
+        &:not(:last-child)
+            margin-bottom: 40px
+        &__img
+            width: 90px
+            height: 90px
+            border-radius: 50%
+            &__block
+                padding: 10px
+                border: 2px solid #FF9900
+                border-radius: 50%
+            &-1
+                background: url('../img/guarantee/guarantee_card1.png') no-repeat center
+            &-2
+                background: url('../img/guarantee/guarantee_card2.png') no-repeat center
+            &-3
+                background: url('../img/guarantee/guarantee_card3.png') no-repeat center
+            &-4
+                background: url('../img/guarantee/guarantee_card4.png') no-repeat center
+            &-5
+                background: url('../img/guarantee/guarantee_card5.png') no-repeat center
+
+        &__info
+            display: flex
+            flex-direction: column
+            max-width: 279px
+            margin-left: 10px
+        &__text
+            text-decoration: none
+            margin-bottom: 10px
+            font-family: 'Gilroy-bold'
+            font-size: 24px
+        &__link
+            color: #FF9900
+            text-decoration: none
+            border-bottom: 1px solid #FF9900
+            max-width: 113px
+            font-size: 18px
+            transition: all 0.2s
+            &:hover
+                color: #be7836
+                border-bottom: 1px solid #be7836
+    &__catalog
+        display: flex
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        margin-top: -600px
+        &__img
+            margin-bottom: 60px
+            width: 650px
+        &__link
+            text-decoration: none
+            padding: 10px 5px
+            background: #FF4D00
+            border-radius: 30px
+            color: #ffffff
+            font-weight: bold
+            font-size: 20px
+            transition: all 0.2s
+            margin-bottom: 40px
+            &:hover
+                box-shadow: 0px 0px 20px rgba(255, 76, 0, 0.8)
+            &__text
+                padding: 7px 30px
+                border: 1px solid #ffffff
+                border-radius: 30px
+                line-height: 150%;
+        &__compare
+            position: relative
+            text-decoration: none
+            color: #FF9900
+            border-bottom: 1px solid #FF9900
+            font-size: 18px
+            transition: all 0.2s
+            &:hover
+                color: #be7836
+    &__fake
+        max-width: 1410px
+        width: 100%
+        padding-top: 30px
+        margin: auto
+        background-color: #ffffff
+        border-radius: 30px
+        &__heading
+            display: flex
+            flex-direction: column
+            align-items: flex-end
+        &__title
+            font-size: 48px
+            line-height: 120%
+            max-width: 922px
+            font-weight: normal
+            font-family: 'Gilroy-medium'
+        &__text
+            max-width: 904px
+            font-size: 24px
+            line-height: 120%
+            margin-top: 16px

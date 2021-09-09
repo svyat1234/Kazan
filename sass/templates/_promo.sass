@@ -1,8 +1,8 @@
 .promo
     margin: auto
-    margin-top: 80px
+    padding-top: 80px
     padding-bottom: 50px
-    background: url('../img/promo-bg.png') no-repeat bottom
+    background: url('../img/promo-bg2.png') no-repeat right bottom 150px, url('../img/promo-bg.png') no-repeat bottom, url('../img/promo-bg3.png') no-repeat left top 
     &__block
         position: relative
         max-width: 1410px
@@ -17,6 +17,17 @@
             margin-right: -100px
             margin-top: -100px
             background: url('../img/promo_block.png') no-repeat top
+        &::before
+            position: absolute
+            content: ''
+            display: flex
+            right: 0
+            bottom: 0
+            width: 390px
+            height: 292px
+            margin-bottom: -100px
+            margin-right: -200px
+            background: url('../img/promo-bg4.png') no-repeat 
     &__heading
         display: flex
         flex-direction: column
