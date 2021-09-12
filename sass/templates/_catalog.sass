@@ -1,0 +1,271 @@
+.catalog
+    font-family: 'Gilroy-regular'
+    &__content
+        padding-top: 50px
+        background-color: rgba(255, 255, 255, 0.8)
+        padding-bottom: 202px
+    &__links
+        max-width: 652px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: center
+        font-size: 22px
+        &__block
+            margin-top: 40px
+            margin-bottom: 50px 
+            max-width: 852px
+            width: 100%
+            display: flex
+            justify-content: flex-end
+    &__link
+        color: #FF9900
+        transition: all 0.2s
+        &:hover
+            color: #be7836
+    &__heading
+        background: #FFFFFF
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+        border-radius: 10px
+        padding-top: 7px
+        padding-bottom: 7px
+        display: flex
+        align-items: center
+        padding-left: 50px
+        &__img
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            background: #FF9900 url('../img/catalog/catalog_family.svg') no-repeat center
+            &__elipse
+                padding: 9px
+                border-radius: 50%
+                border: 1px solid #FF9900
+                margin-right: 22px
+        &__title
+            font-weight: normal
+    &__cards
+        display: flex
+        justify-content: space-between
+        align-items: center
+        flex-wrap: wrap 
+        &:not(:last-child)
+            margin-bottom: 100px
+    &__card
+        margin-top: 30px
+        max-width: 330px
+        width: 100%
+        display: flex
+        flex-direction: column
+        align-items: center
+        background: #FFFFFF
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+        border-radius: 10px
+        padding: 20px
+        &__title
+            font-family: 'Gilroy-bold'
+            font-size: 24px
+        &__info
+            margin-top: 5px
+            display: flex
+            align-items: center
+            &__img
+                margin-right: 10px
+            &__text
+                font-size: 14px
+        &__content
+            background: #F8F8F8
+            border-radius: 10px
+            width: 100%
+            padding-top: 10px
+            padding-bottom: 13px
+            margin-top: 20px
+            &__block
+                display: flex
+                justify-content: space-between
+                font-size: 14px
+                max-width: 269px
+                width: 100%
+                margin: auto
+                &:not(:first-child)
+                    margin-top: 7px
+                &:not(:last-child)
+                    padding-bottom: 8px
+                    border-bottom: 1px solid #00000063
+            &__name
+                padding-left: 10px
+                position: relative
+                &::before
+                    position: absolute
+                    content: ''
+                    display: flex
+                    width: 10px
+                    height: 10px
+                    left: 0
+                    top: 50%
+                    margin-top: -5px
+                    background: #FF9900;
+                    border-radius: 50%
+                    margin-left: -5px
+            &__info
+                font-weight: bold
+        &__price
+            margin-top: 10px
+            border: 1px solid #F8F8F8
+            border-radius: 10px
+            display: flex
+            justify-content: space-between
+            align-items: center
+            padding-left: 10px
+            width: 100%
+            margin-bottom: 15px
+            &__old
+                font-size: 18px
+                color: rgba(0, 0, 0, 0.5)
+                font-family: 'Gilroy-bold'
+                position: relative
+                &::after
+                    position: absolute
+                    content: ''
+                    display: flex
+                    height: 1px
+                    width: 58px
+                    left: 50%
+                    top: 50%
+                    margin-left: -29px
+                    margin-top: -1px
+                    background-color: #FF0000
+            &__block
+                display: flex
+                justify-content: space-between
+                border: 1px solid #FF9900
+                border-radius: 10px
+                padding-top: 5px
+                padding-bottom: 5px
+                padding-left: 17px
+                max-width: 212px
+                width: 100%
+            &__title
+                font-weight: 600
+                font-size: 24px
+            &__text
+                max-width: 102px
+                font-size: 12px
+        &__buttons
+            display: flex
+            justify-content: space-between
+            align-items: center
+            width: 100%
+        &__button
+            padding: 10px 5px
+            background: #FF4D00
+            border: none
+            border-radius: 30px
+            color: #ffffff
+            font-weight: bold
+            font-size: 20px
+            transition: all 0.2s
+            cursor: pointer
+            &:hover
+                box-shadow: 0px 0px 20px rgba(255, 76, 0, 0.8)
+            &__text
+                padding: 7px 69px
+                border: 1px solid #ffffff
+                border-radius: 30px
+                line-height: 150%
+            &__basket
+                position: relative
+                width: 50px
+                height: 50px
+                background: #FF9900 url('../img/catalog/catalog_basket.svg') no-repeat center
+                border-radius: 50%
+                border: none
+                cursor: pointer
+                &::after
+                    position: absolute
+                    content: '+'
+                    display: flex
+                    justify-content: center
+                    align-items: center
+                    top: 0
+                    right: 0
+                    width: 25px
+                    height: 25px
+                    background-color: #000000
+                    color: #ffffff
+                    font-size: 18px
+                    font-family: 'Montserrat'
+                    font-weight: bold
+                    border-radius: 50%
+                    margin-top: -5px
+                    margin-right: -5px
+    &__slider
+        max-width: 290px
+        width: 100%
+        min-height: 200px
+        background: #C4C4C4
+        border-radius: 10px
+        margin-bottom: 10px
+    &__set
+        background: #FFFFFF
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+        border-radius: 10px
+        padding-left: 30px
+        padding-top: 30px
+        padding-bottom: 30px
+        padding-right: 38px
+        display: flex
+        margin-top: -120px
+        &__heading
+            padding-right: 15px
+            border-right: 1px solid #000000
+        &__title
+            font-family: Montserrat
+            font-style: normal
+            font-weight: bold
+            font-size: 24px
+            line-height: 150%
+            max-width: 340px
+            margin-bottom: 20px
+            display: flex
+        &__info
+            font-family: Montserrat
+            font-style: normal
+            font-weight: normal
+            font-size: 18px
+            line-height: 150%
+            display: flex
+            max-width: 365px
+        &__block
+            max-width: 892px
+            width: 100%
+            margin-left: 59px
+        &__cards
+            display: flex
+            justify-content: space-between
+            align-items: center
+        &__card
+            width: 140px
+            height: 135px
+            text-align: center
+            display: flex
+            flex-direction: column
+            align-items: center
+            border: 1px solid rgba(0, 0, 0, 0.5)
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+            border-radius: 10px
+        &__img
+            height: 70px
+            width: 87px
+            &-1
+                background: url('../img/catalog/catalog_set1.png') no-repeat center
+            &-2
+                background: url('../img/catalog/catalog_set2.png') no-repeat center
+            &-3
+                background: url('../img/catalog/catalog_set3.png') no-repeat center
+            &-4
+                background: url('../img/catalog/catalog_set4.png') no-repeat center
+            &-5
+                background: url('../img/catalog/catalog_set5.png') no-repeat center
+        &__text
+            max-width: 100px
