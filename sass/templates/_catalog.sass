@@ -1,5 +1,11 @@
 .catalog
     font-family: 'Gilroy-regular'
+    &__bake
+        margin-bottom: 100px
+    &__title
+        &__bake
+            max-width: 770px
+            margin-top: 50px
     &__content
         padding-top: 50px
         background-color: rgba(255, 255, 255, 0.8)
@@ -69,17 +75,22 @@
             margin-top: 5px
             display: flex
             align-items: center
+            margin-bottom: 20px
             &__img
                 margin-right: 10px
             &__text
                 font-size: 14px
+        &__name
+            font-family: 'Gilroy-bold'
+            font-size: 17px
+            margin-top: 10px
+            margin-bottom: 3px
         &__content
             background: #F8F8F8
             border-radius: 10px
             width: 100%
             padding-top: 10px
             padding-bottom: 13px
-            margin-top: 20px
             &__block
                 display: flex
                 justify-content: space-between
@@ -138,13 +149,15 @@
             &__block
                 display: flex
                 justify-content: space-between
+                align-items: center
                 border: 1px solid #FF9900
                 border-radius: 10px
                 padding-top: 5px
                 padding-bottom: 5px
-                padding-left: 17px
-                max-width: 212px
+                padding-left: 10px
+                max-width: 205px
                 width: 100%
+                padding-right: 5px
             &__title
                 font-weight: 600
                 font-size: 24px
@@ -216,6 +229,7 @@
         padding-right: 38px
         display: flex
         margin-top: -120px
+        margin-bottom: 80px
         &__heading
             padding-right: 15px
             border-right: 1px solid #000000

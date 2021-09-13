@@ -1,0 +1,213 @@
+.special
+    margin-top: 50px
+    margin-bottom: 100px
+    font-family: 'Gilroy-regular'
+    &__title
+        max-width: 757px
+        margin-bottom: 30px
+    &__nav
+        display: flex
+        justify-content: space-between
+        background: #FFFFFF
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+        border-radius: 10px
+        &__button
+            position: relative
+            font-size: 24px
+            line-height: 120%
+            max-width: 225px
+            width: 100%
+            background: transparent
+            border: none
+            display: flex
+            justify-content: center
+            align-items: center
+            padding-top: 25px
+            padding-bottom: 25px
+            cursor: pointer
+            transition: all 0.2s
+            &:hover
+                background: #FF9900
+            &:first-child
+                border-top-left-radius: 10px
+                border-bottom-left-radius: 10px
+                background: #FF9900
+            &:last-child
+                border-top-right-radius: 10px
+                border-bottom-right-radius: 10px
+            &:not(:last-child)
+                &::after
+                    position: absolute
+                    content: ''
+                    display: flex
+                    right: 0
+                    top: 50%
+                    height: 62px
+                    margin-top: -31px
+                    margin-right: -6px
+                    width: 1px
+                    background: rgba(0, 0, 0, 0.3)
+        &__img
+            width: 50px
+            height: 50px
+            border-radius: 50%
+            margin-right: 10px
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+            &-1
+                background: #ffffff url('../img/special/special_nav1.png') no-repeat center
+            &-2
+                background: #ffffff url('../img/special/special_nav2.png') no-repeat center
+            &-3
+                background: url('../img/special/special_nav3.png') no-repeat center
+            &-4
+                background: url('../img/special/special_nav4.png') no-repeat center
+            &-5
+                background: url('../img/special/special_nav5.png') no-repeat center
+            &-6
+                background: url('../img/special/special_nav6.png') no-repeat center
+    &__content
+        background: #FFFFFF
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+        border-radius: 10px
+        display: flex
+        justify-content: space-between
+        padding-left: 50px
+        padding-right: 40px
+        padding-top: 41px
+        padding-bottom: 73px
+        margin-top: 30px
+    &__slider
+        width: 550px
+        height: 550px
+        border-radius: 50%
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+        background: #FBFBFA url('../img/special/special_slider.png') no-repeat center
+    &__block
+        position: relative
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        padding-bottom: 100px
+        &::after
+            position: absolute
+            content: ''
+            display: flex
+            bottom: 0
+            right: 0
+            width: 717px
+            height: 1px
+            background: rgba(0, 0, 0, 0.3)
+        &__info
+            max-width: 720px
+            width: 100%
+    &__spec
+        position: relative
+        &::after
+            position: absolute
+            content: ''
+            display: flex
+            width: 1px
+            height: 320px
+            top: 0
+            right: 0
+            background: rgba(0, 0, 0, 0.3)
+            margin-right: -13px
+        &__title
+            font-family: 'Gilroy-bold'
+            font-size: 36px
+        &__card
+            width: 360px
+        &__list
+            max-width: 315px
+    &__description
+        &__title
+            font-size: 14px
+            font-weight: normal
+            margin-bottom: 10px
+        &__info
+            max-width: 181px
+            width: 100%
+            display: flex
+            justify-content: space-between
+            align-items: center
+            margin-bottom: 31px
+            &__img
+                width: 50px
+                height: 50px
+                border-radius: 50%
+                box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+                background: #ffffff url('../img/special/special_nav1.png') no-repeat center
+            &__name
+                font-size: 24px
+        &__text
+            font-size: 24px
+            line-height: 120%
+            max-width: 317px
+    &__price
+        margin-top: 20px
+        max-width: 652px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        &__title
+            font-weight: normal
+            font-size: 24px
+            margin-bottom: 20px
+        &__catalog
+            background: #FBFBFA
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+            border-radius: 10px
+            max-width: 190px
+            padding: 15px 20px
+            font-size: 24px
+            font-weight: 600
+            cursor: pointer
+            &__text
+                background: #ffffff url('../img/down.svg') no-repeat right
+                padding-right: 51px
+        &__block
+            display: flex
+            align-items: center
+            border: 1px solid #F8F8F8
+            border-radius: 10px
+            padding-left: 10px
+            padding-right: 15px
+        &__old
+            position: relative
+            font-size: 18px
+            font-weight: 600
+            width: 68px
+            margin-right: 20px
+            &::after
+                position: absolute
+                display: flex
+                content: ''
+                top: 50%
+                left: 50%
+                width: 58px
+                height: 1px
+                background:#FF0000
+                margin-left: -29px
+        &__sale
+            &__block
+                display: flex
+                border: 1px solid #FF9900
+                border-radius: 10px
+                padding: 15px
+        &__name
+            font-size: 24px
+            font-weight: 600
+            margin-right: 5px
+        &__text
+            max-width: 98px
+            font-size: 12px
+            line-height: 120%
+            display: flex
+    &__buttons
+        display: flex
+        justify-content: space-between
+        align-items: center
+        max-width: 290px
+        margin: auto
+        margin-top: 60px

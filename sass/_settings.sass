@@ -15,9 +15,24 @@ body
         font-size: 48px
         &__bold
             font-size: 48px
-            font-family: 'Gilroy-bold'
+            font-family: 'Montserrat'
+            font-weight: bold
     &__text__primary
        font-family: 'Gilroy-bold' 
+    &__button
+        background: #FF4D00
+        border: none
+        border-radius: 30px
+        transition: all 0.2s
+        cursor: pointer
+        &:hover
+            box-shadow: 0px 0px 20px rgba(255, 76, 0, 0.8)
+        &__text
+            color: #ffffff
+            font-size: 20px
+            font-family: 'Montserrat'
+            font-weight: bold
+            border-radius: 30px
 .sale
     padding-top: 21px
     padding-bottom: 21px
@@ -31,3 +46,17 @@ body
         font-size: 48px
     &__primary
         font-family: 'Gilroy-bold'
+    &__bonuce
+        text-align-last: left
+    &__price
+        position: relative
+        &::after
+            position: absolute
+            content: ''
+            display: flex
+            width: 164px
+            height: 2px
+            background-color: #FF0000
+            top: 50%
+            left: 50%
+            margin-left: -75px
