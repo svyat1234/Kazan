@@ -1,0 +1,51 @@
+.stages
+    margin-top: 50px
+    margin-bottom: 100px
+    text-align: center
+    &__title
+        margin-bottom: 20px
+    &__info
+        font-size: 24px
+        line-height: 150%
+    &__cards
+        margin-top: 50px
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        margin-bottom: 50px
+    &__img
+        width: 100px
+        height: 100px
+        &__elipse
+            position: relative
+            padding: 25px
+            border-radius: 50%
+            border: 2px solid #FF9900
+            width: 150px
+            height: 150px
+            margin: auto
+    &__next
+        &::after 
+            position: absolute
+            content: ''
+            display: flex
+            width: 101px
+            height: 47.43px
+            top: 50%
+            right: 0
+            background: url('../img/stages/next.svg')
+            margin-top: -23px
+            margin-right: -176px
+    &__card
+        max-width: 267px
+        font-size: 18px
+        &:nth-child(2)
+            max-width: 297px
+        &__title
+            margin-top: 10px
+            margin-bottom: 10px
+    &__button
+       padding: 10px 5px 
+       &__text
+            padding: 7px 76px
+            line-height: 150%
