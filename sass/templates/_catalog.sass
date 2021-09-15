@@ -51,9 +51,9 @@
         &__title
             font-weight: normal
     &__cards
-        display: flex
-        justify-content: space-between
-        align-items: center
+        display: flex !important 
+        justify-content: space-between !important
+        align-items: center !important
         flex-wrap: wrap 
         &:not(:last-child)
             margin-bottom: 100px
@@ -215,10 +215,33 @@
     &__slider
         max-width: 290px
         width: 100%
-        min-height: 200px
+        height: 200px
         background: #C4C4C4
         border-radius: 10px
         margin-bottom: 10px
+    &__slide
+        position: relative
+        background: url(../img/guarantee/guarantee_kazan.png) no-repeat center 
+        background-size: 70%
+    &__prev
+        width: 30px !important
+        height: 30px !important
+        &::after
+            width: 30px !important
+            height: 30px !important
+            font-size: 0 !important
+            background-color: #ffffff
+            border-radius: 50%
+            background: #ffffff url('../img/prev.svg') no-repeat center
+    &__next
+        width: 30px !important
+        height: 30px !important
+        &::after
+            font-size: 0 !important
+            width: 30px
+            height: 30px
+            border-radius: 50%
+            background: #ffffff url('../img/next.svg') no-repeat center
     &__set
         background: #FFFFFF
         box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
