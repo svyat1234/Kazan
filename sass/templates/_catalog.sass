@@ -1,4 +1,5 @@
 .catalog
+    position: relative
     font-family: 'Gilroy-regular'
     &__bake
         margin-bottom: 100px
@@ -194,6 +195,7 @@
                 border-radius: 50%
                 border: none
                 cursor: pointer
+                transition: all 0.2s
                 &::after
                     position: absolute
                     content: '+'
@@ -212,6 +214,8 @@
                     border-radius: 50%
                     margin-top: -5px
                     margin-right: -5px
+                &:hover
+                    box-shadow: 0px 0px 10px #FF9900
     &__slider
         max-width: 290px
         width: 100%
@@ -306,3 +310,16 @@
                 background: url('../img/catalog/catalog_set5.png') no-repeat center
         &__text
             max-width: 100px
+
+.ds__prev
+    margin-left: 150px !important
+.ds__next
+    margin-right: 150px !important
+.ds-wrapper
+    padding-bottom: 80px
+    display: flex
+.swiper-pagination-bullet
+    width: 20px !important
+    height: 20px !important
+    background-color: #FF9900 !important
+    margin: 10px !important
