@@ -28,6 +28,10 @@
     &__link
         color: #FF9900
         transition: all 0.2s
+        &-accessory
+            display: flex
+            font-size: 24px
+            margin-bottom: 50px
         &:hover
             color: #be7836
     &__heading
@@ -310,6 +314,13 @@
                 background: url('../img/catalog/catalog_set5.png') no-repeat center
         &__text
             max-width: 100px
+    &__accessory
+        &__text
+            display: flex
+            font-size: 24px
+            max-width: 620px
+            margin-top: 20px
+            margin-bottom: 30px
 
 .ds__prev
     margin-left: 150px !important
@@ -323,3 +334,24 @@
     height: 20px !important
     background-color: #FF9900 !important
     margin: 10px !important
+
+
+.ds
+    &__prev
+        width: 24.67px !important
+        height: 80px !important
+        &::after
+            width: 24.67px !important
+            height: 80px !important
+            font-size: 0 !important
+            background: url('../img/prev_main.svg') no-repeat center
+    &__next
+        width: 24.67px !important
+        height: 80px !important
+        &::after
+            font-size: 0 !important
+            width: 24.67px
+            height: 80px
+            background: url('../img/next_main.svg') no-repeat center
+
+    

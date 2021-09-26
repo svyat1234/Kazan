@@ -17,3 +17,79 @@
         width: 100%
         display: flex
         justify-content: space-between
+        margin-bottom: 30px
+    &__cards
+        position: relative
+        width: 567px
+        display: flex
+        justify-content: space-between
+        align-items: flex-start
+        &::after
+            position: absolute
+            content: ''
+            display: flex
+            width: 1px
+            height: 170px
+            background-color: #ff9900a4
+            right: 0
+            top: 0
+            margin-right: -89px
+    &__card
+        text-align: center
+        font-size: 18px
+        display: flex
+        flex-direction: column
+        align-items: center
+        &:first-child
+            max-width: 154px
+        &:nth-child(2)
+            max-width: 216px
+        &:nth-child(3)
+            max-width: 117px
+        &__img
+            width: 50px
+            height: 50px
+            border: 1px solid
+            border-radius: 50%
+            margin-bottom: 10px
+            margin-top: 30px
+            &-tel
+                background: url('../img/contacts/tel.svg') no-repeat center
+            &-location
+                background: url('../img/contacts/location.svg') no-repeat center
+            &-time
+                background: url('../img/contacts/time.svg') no-repeat center
+    &__showroom
+        &__images
+            margin-top: 20px
+            display: flex
+            justify-content: space-between
+            width: 371px
+        &__img
+            width: 117px
+            height: 127px
+    &__links
+        max-width: 907px
+        width: 100%
+        display: flex
+        justify-content: space-between
+        font-size: 18px
+    &__link
+        text-decoration: none
+        color: #000
+        display: flex
+        align-items: center
+        &__img
+            width: 30px
+            height: 30px
+            border: 1px solid
+            border-radius: 50%
+            margin-right: 10px
+            &-facebook
+                background: url('../img/contacts/facebook.svg') no-repeat center
+            &-email
+                background: url('../img/contacts/email.svg') no-repeat center
+            &-inst
+                background: url('../img/contacts/inst.svg') no-repeat center
+            &-telegram
+                background: url('../img/contacts/telegram.svg') no-repeat center

@@ -1388,6 +1388,14 @@ body {
   transition: all 0.2s;
 }
 
+.catalog__link-accessory {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  margin-bottom: 50px;
+}
+
 .catalog__link:hover {
   color: #be7836;
 }
@@ -1857,6 +1865,16 @@ body {
   max-width: 100px;
 }
 
+.catalog__accessory__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 24px;
+  max-width: 620px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
 .ds__prev {
   margin-left: 150px !important;
 }
@@ -1877,6 +1895,30 @@ body {
   height: 20px !important;
   background-color: #FF9900 !important;
   margin: 10px !important;
+}
+
+.ds__prev {
+  width: 24.67px !important;
+  height: 80px !important;
+}
+
+.ds__prev::after {
+  width: 24.67px !important;
+  height: 80px !important;
+  font-size: 0 !important;
+  background: url("../img/prev_main.svg") no-repeat center;
+}
+
+.ds__next {
+  width: 24.67px !important;
+  height: 80px !important;
+}
+
+.ds__next::after {
+  font-size: 0 !important;
+  width: 24.67px;
+  height: 80px;
+  background: url("../img/next_main.svg") no-repeat center;
 }
 
 .special {
@@ -2856,5 +2898,204 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.contacts__cards {
+  position: relative;
+  width: 567px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.contacts__cards::after {
+  position: absolute;
+  content: '';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1px;
+  height: 170px;
+  background-color: #ff9900a4;
+  right: 0;
+  top: 0;
+  margin-right: -89px;
+}
+
+.contacts__card {
+  text-align: center;
+  font-size: 18px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__card:first-child {
+  max-width: 154px;
+}
+
+.contacts__card:nth-child(2) {
+  max-width: 216px;
+}
+
+.contacts__card:nth-child(3) {
+  max-width: 117px;
+}
+
+.contacts__card__img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.contacts__card__img-tel {
+  background: url("../img/contacts/tel.svg") no-repeat center;
+}
+
+.contacts__card__img-location {
+  background: url("../img/contacts/location.svg") no-repeat center;
+}
+
+.contacts__card__img-time {
+  background: url("../img/contacts/time.svg") no-repeat center;
+}
+
+.contacts__showroom__images {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 371px;
+}
+
+.contacts__showroom__img {
+  width: 117px;
+  height: 127px;
+}
+
+.contacts__links {
+  max-width: 907px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 18px;
+}
+
+.contacts__link {
+  text-decoration: none;
+  color: #000;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.contacts__link__img {
+  width: 30px;
+  height: 30px;
+  border: 1px solid;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.contacts__link__img-facebook {
+  background: url("../img/contacts/facebook.svg") no-repeat center;
+}
+
+.contacts__link__img-email {
+  background: url("../img/contacts/email.svg") no-repeat center;
+}
+
+.contacts__link__img-inst {
+  background: url("../img/contacts/inst.svg") no-repeat center;
+}
+
+.contacts__link__img-telegram {
+  background: url("../img/contacts/telegram.svg") no-repeat center;
+}
+
+.footer {
+  padding-top: 25px;
+  padding-bottom: 25px;
+  background-color: #fff;
+}
+
+.footer__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 387px;
+  width: 100%;
+}
+
+.footer__info__text {
+  max-width: 197px;
+  font-size: 10px;
+  line-height: 150%;
+}
+
+.footer__links {
+  max-width: 443px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 14px;
+}
+
+.footer__link {
+  text-decoration: none;
+  color: #000;
+}
+
+.footer__developer {
+  font-size: 14px;
 }
 /*# sourceMappingURL=style.css.map */
